@@ -7,13 +7,13 @@ function fibonacci(num) {
 	}
 		
 	else{
-		let a = 0, b = 1;
+		let n1 = 0, n2 = 1;
         for (let i = 2; i < num; i++) {
-            let temp = a + b;
-            a = b;
-            b = temp;
+            let n3 = n1 + n2;
+            n1 =n2;
+            n2 =n3;
         }
-        return b;
+        return n2;
 	}
 
 }

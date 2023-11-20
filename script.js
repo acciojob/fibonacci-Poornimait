@@ -1,10 +1,20 @@
 function fibonacci(num) {
-	if(num==1)
+	if(num===0){
 		return 0;
-	else if(num==2 || num==3)
+	}
+	else if(num===1){
 		return 1;
-	else
-		return(fibonacci(num-1)+fibonacci(num-2));
+	}
+		
+	else{
+		let a = 0, b = 1;
+        for (let i = 2; i < num; i++) {
+            let temp = a + b;
+            a = b;
+            b = temp;
+        }
+        return b;
+	}
 
 }
 
